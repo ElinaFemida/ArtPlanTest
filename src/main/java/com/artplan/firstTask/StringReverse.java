@@ -1,4 +1,4 @@
-package firstTask;
+package com.artplan.firstTask;
 
 import java.io.BufferedReader;
 import java.io.IOException;
