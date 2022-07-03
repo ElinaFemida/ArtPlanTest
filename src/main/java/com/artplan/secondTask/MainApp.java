@@ -1,4 +1,10 @@
 package com.artplan.secondTask;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.PropertySource;
+
 /*
 Написать набор сервисов длЯ SOA WEB приложениЯ.Приложение должно реализовывать такие сервисы :
         - создание пользователЯ с (регистрацией).
@@ -18,5 +24,13 @@ package com.artplan.secondTask;
 В качестве базы данных можно взЯть PostgreSQL, Mongo или любую InMemory базу (но, тогда jar-ник надо добавить в архив).
 РекомендуетсЯ использовать Spring и Hibernate (можно c JPA).
 Фронт приложение не нужно, только бекэнд часть.*/
+
+@SpringBootApplication
+@PropertySource("classpath:app.properties")
 public class MainApp {
+    public static void main(String[] args) {
+
+        SpringApplication.run(MainApp.class, args);
+    }
 }
+
